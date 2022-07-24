@@ -64,6 +64,9 @@ $ npm run start:dev
 - alternatively open `./src/appointments/request.http` to test the API with VS code REST Client plugin
 - *db.sqlite* is uploaded together with the source code
 
+#### Screenshot
+<img width="600" alt="Screen Shot 2022-07-24 at 8 28 36 PM" src="https://user-images.githubusercontent.com/41196218/180647817-5b99c3f5-27b8-441d-a2eb-7b0ee43505ef.png">
+
 
 ## NOTES:
 
