@@ -1,0 +1,34 @@
+### create appointments
+POST http://localhost:5000/appointments
+Content-Type: application/json
+
+{
+  "title": "Meeting 1",
+  "createdBy": "user1@test.com",
+  "eventDate": "2022-07-27T16:00",
+  "type": "critical",
+  "description": " dolore magna aliqua. Ut enim ad minim veniam, quis nostrud sed do eiusmod tempor incididunt ut labore et exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+}
+
+
+### Get all appointments
+GET http://localhost:5000/appointments
+
+
+### find appointments by id
+GET http://localhost:5000/appointments/2
+
+
+### delete appointment by id
+DELETE http://localhost:5000/appointments/3
+
+name
+### update appointment by id
+PATCH http://localhost:5000/appointments/2
+Content-Type: application/json
+
+{
+  "type": "Low",
+  "description": "No comment"
+}
+
