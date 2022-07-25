@@ -10,7 +10,6 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const appointments_module_1 = require("./appointments/appointments.module");
-const users_module_1 = require("./users/users.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -23,7 +22,6 @@ AppModule = __decorate([
                 synchronize: true,
             }),
             appointments_module_1.AppointmentsModule,
-            users_module_1.UsersModule
         ],
     })
 ], AppModule);
