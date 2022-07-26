@@ -1,9 +1,13 @@
 import { NestFactory } from '@nestjs/core';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
+const cookieSession = require('cookie-session')
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.use(cookieSession({
+    keys: ['abcd1234']
+  }))
   app.enableCors();
 
   const config = new DocumentBuilder()
